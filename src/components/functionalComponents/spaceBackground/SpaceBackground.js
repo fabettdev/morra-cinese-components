@@ -2,17 +2,17 @@
 import React from "react";
 
 // React Native
-import { View, ImageBackground, Text } from "react-native";
+import { ImageBackground } from "react-native";
 
 // Styles
 import spaceBackgroundStyle from "./spaceBackgroundStyle";
 
-// Images
-const spaceBg = require("../../../assets/images/welcome/background.png");
-
 function SpaceBackground(props) {
   return (
-    <ImageBackground source={spaceBg} style={spaceBackgroundStyle.container}>
+    <ImageBackground
+      source={props.bgImage}
+      style={spaceBackgroundStyle.container}
+    >
       {props.children}
     </ImageBackground>
   );

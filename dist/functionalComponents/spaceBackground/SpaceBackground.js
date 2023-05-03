@@ -14,11 +14,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // Styles
 
-// Images
-var spaceBg = require("../../../assets/images/welcome/background.png");
 function SpaceBackground(props) {
   return /*#__PURE__*/_react.default.createElement(_reactNative.ImageBackground, {
-    source: spaceBg,
+    source: props.bgImage,
     style: _spaceBackgroundStyle.default.container
   }, props.children);
 }
