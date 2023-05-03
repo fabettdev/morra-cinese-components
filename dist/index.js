@@ -15,6 +15,13 @@ Object.defineProperty(exports, "SpaceBackground", {
     return _SpaceBackground.default;
   }
 });
+Object.defineProperty(exports, "TextTitle", {
+  enumerable: true,
+  get: function get() {
+    return _TextTitle.default;
+  }
+});
 var _Button = _interopRequireDefault(require("./functionalComponents/button/Button"));
 var _SpaceBackground = _interopRequireDefault(require("./functionalComponents/spaceBackground/SpaceBackground"));
+var _TextTitle = _interopRequireDefault(require("./functionalComponents/textTitle/TextTitle"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
