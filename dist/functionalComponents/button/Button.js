@@ -5,9 +5,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+// React
+
+// React Native
+
 function Button() {
-  return /*#__PURE__*/_react.default.createElement("div", null, "Button versione 2");
+  return /*#__PURE__*/_react.default.createElement(_reactNative.View, null, /*#__PURE__*/_react.default.createElement(_reactNative.Text, null, "Button versione 4"));
 }
 var _default = Button;
 exports.default = _default;
