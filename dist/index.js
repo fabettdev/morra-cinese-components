@@ -39,6 +39,12 @@ Object.defineProperty(exports, "LeaderboardButton", {
     return _LeaderboardButton.default;
   }
 });
+Object.defineProperty(exports, "MoveIcon", {
+  enumerable: true,
+  get: function get() {
+    return _MoveIcon.default;
+  }
+});
 Object.defineProperty(exports, "SpaceBackground", {
   enumerable: true,
   get: function get() {
@@ -59,4 +65,5 @@ var _Button = _interopRequireDefault(require("./functionalComponents/button/Butt
 var _Controls = _interopRequireDefault(require("./functionalComponents/controls/Controls"));
 var _BattleBoard = _interopRequireDefault(require("./functionalComponents/battleBoard/BattleBoard"));
 var _BattleButton = _interopRequireDefault(require("./functionalComponents/battleButton/BattleButton"));
+var _MoveIcon = _interopRequireDefault(require("./functionalComponents/moveIcon/MoveIcon"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

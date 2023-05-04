@@ -6,6 +6,7 @@ import Button from "./functionalComponents/button/Button";
 import Controls from "./functionalComponents/controls/Controls";
 import BattleBoard from "./functionalComponents/battleBoard/BattleBoard";
 import BattleButton from "./functionalComponents/battleButton/BattleButton";
+import MoveIcon from "./functionalComponents/moveIcon/MoveIcon";
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Controls,
   BattleBoard,
   BattleButton,
+  MoveIcon,
 };
