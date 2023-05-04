@@ -15,9 +15,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Styles
 
 function SpaceBackground(props) {
+  var _useWindowDimensions = (0, _reactNative.useWindowDimensions)(),
+    height = _useWindowDimensions.height;
+  var imageBackgroundHeight = _reactNative.Platform.OS === "web" ? height > 768 ? "100vh" : _reactNative.Dimensions.get("window").height : "100%";
   return /*#__PURE__*/_react.default.createElement(_reactNative.ImageBackground, {
     source: props.bgImage,
-    style: _spaceBackgroundStyle.default.container
+    style: [_spaceBackgroundStyle.default.container, {
+      height: imageBackgroundHeight
+    }]
   }, props.children);
 }
 var _default = SpaceBackground;

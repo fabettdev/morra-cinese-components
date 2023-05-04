@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "BattleBoard", {
+  enumerable: true,
+  get: function get() {
+    return _BattleBoard.default;
+  }
+});
 Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
@@ -45,4 +51,5 @@ var _Form = _interopRequireDefault(require("./hookComponents/form/Form"));
 var _LeaderboardButton = _interopRequireDefault(require("./functionalComponents/leaderboardButton/LeaderboardButton"));
 var _Button = _interopRequireDefault(require("./functionalComponents/button/Button"));
 var _Controls = _interopRequireDefault(require("./functionalComponents/controls/Controls"));
+var _BattleBoard = _interopRequireDefault(require("./functionalComponents/battleBoard/BattleBoard"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
