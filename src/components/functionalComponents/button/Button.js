@@ -1,14 +1,21 @@
-// React
+//React
 import React from "react";
 
-// React Native
-import { View, Text } from "react-native";
+// Native
+import { TouchableOpacity, Text } from "react-native";
 
-function Button() {
+// Style
+import { buttonStyle } from "./buttonStyle";
+
+function Button(props) {
+  function onPressHandler() {
+    props.onPressButton();
+  }
+
   return (
-    <View>
-      <Text>Button versione 4</Text>
-    </View>
+    <TouchableOpacity onPress={onPressHandler} style={buttonStyle.button}>
+      <Text style={buttonStyle.label}>{props.label}</Text>
+    </TouchableOpacity>
   );
 }
 
