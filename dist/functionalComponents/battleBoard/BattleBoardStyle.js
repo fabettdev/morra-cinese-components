@@ -18,8 +18,10 @@ var battleBoardStyle = _reactNative.StyleSheet.create({
   text: {
     color: "white",
     position: "absolute",
-    left: _reactNative.Platform.OS === "web" ? "40%" : "40%",
-    top: _reactNative.Platform.OS === "web" ? "9%" : "9%"
+    left: 0,
+    top: 0,
+    width: "100%",
+    textAlign: "center"
   }
 });
 var _default = battleBoardStyle;

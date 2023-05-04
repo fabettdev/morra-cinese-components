@@ -12,8 +12,10 @@ const battleBoardStyle = StyleSheet.create({
   text: {
     color: "white",
     position: "absolute",
-    left: Platform.OS === "web" ? "40%" : "40%",
-    top: Platform.OS === "web" ? "9%" : "9%",
+    left: 0,
+    top: 0,
+    width: "100%",
+    textAlign: "center",
   },
 });
 
