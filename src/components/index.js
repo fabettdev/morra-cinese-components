@@ -5,6 +5,7 @@ import LeaderboardButton from "./functionalComponents/leaderboardButton/Leaderbo
 import Button from "./functionalComponents/button/Button";
 import Controls from "./functionalComponents/controls/Controls";
 import BattleBoard from "./functionalComponents/battleBoard/BattleBoard";
+import BattleButton from "./functionalComponents/battleButton/BattleButton";
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   LeaderboardButton,
   Controls,
   BattleBoard,
+  BattleButton,
 };

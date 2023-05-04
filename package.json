@@ -1,6 +1,6 @@
 {
   "name": "morra-cinese-components",
-  "version": "0.1.20",
+  "version": "0.1.22",
   "main": "dist/index.js",
   "private": false,
   "files": [

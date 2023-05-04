@@ -2,7 +2,7 @@
 import React from "react";
 
 // React Native
-import { ImageBackground, Text } from "react-native-web";
+import { ImageBackground, Text } from "react-native";
 
 // Style
 import battleBoardStyle from "./BattleBoardStyle";

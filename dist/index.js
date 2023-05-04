@@ -9,6 +9,12 @@ Object.defineProperty(exports, "BattleBoard", {
     return _BattleBoard.default;
   }
 });
+Object.defineProperty(exports, "BattleButton", {
+  enumerable: true,
+  get: function get() {
+    return _BattleButton.default;
+  }
+});
 Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
@@ -52,4 +58,5 @@ var _LeaderboardButton = _interopRequireDefault(require("./functionalComponents/
 var _Button = _interopRequireDefault(require("./functionalComponents/button/Button"));
 var _Controls = _interopRequireDefault(require("./functionalComponents/controls/Controls"));
 var _BattleBoard = _interopRequireDefault(require("./functionalComponents/battleBoard/BattleBoard"));
+var _BattleButton = _interopRequireDefault(require("./functionalComponents/battleButton/BattleButton"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
