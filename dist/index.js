@@ -9,6 +9,12 @@ Object.defineProperty(exports, "Button", {
     return _Button.default;
   }
 });
+Object.defineProperty(exports, "Controls", {
+  enumerable: true,
+  get: function get() {
+    return _Controls.default;
+  }
+});
 Object.defineProperty(exports, "Form", {
   enumerable: true,
   get: function get() {
@@ -38,4 +44,5 @@ var _TextTitle = _interopRequireDefault(require("./functionalComponents/textTitl
 var _Form = _interopRequireDefault(require("./hookComponents/form/Form"));
 var _LeaderboardButton = _interopRequireDefault(require("./functionalComponents/leaderboardButton/LeaderboardButton"));
 var _Button = _interopRequireDefault(require("./functionalComponents/button/Button"));
+var _Controls = _interopRequireDefault(require("./functionalComponents/controls/Controls"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
