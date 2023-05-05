@@ -66,7 +66,7 @@ function FightingIcon(props) {
     }, [state])
 
     return (
-        <View style={[fightingIconStyle.container, { width: containerDimensions, height: containerDimensions }]}>
+        <View style={[fightingIconStyle.container, { width: props.containerDimensions, height: props.containerDimensions }]}>
             <Image
                 source={props.moveHand}
                 style={[
