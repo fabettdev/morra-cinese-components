@@ -86,11 +86,11 @@ function FightingIcon(props) {
     style: [_fightinhIconStyle.fightingIconStyle.container, {
       width: props.containerDimensions,
       height: props.containerDimensions,
-      gap: props.gap
+      gap: props.gap || 0
     }]
   }, /*#__PURE__*/_react.default.createElement(_reactNative.Image, {
     source: props.moveHand,
-    style: {
+    style: [{
       width: props.handDimensions,
       height: props.handDimensions,
       transform: [{
@@ -100,13 +100,21 @@ function FightingIcon(props) {
       }, {
         scaleX: props.direction === "right" ? 1 : -1
       }]
-    }
+    }, _reactNative.Platform.OS === "web" && {
+      position: "absolute",
+      left: (props.containerDimensions - handDimensions) / 2,
+      bottom: 50
+    }]
   }), /*#__PURE__*/_react.default.createElement(_reactNative.Image, {
     source: props.baseHand,
-    style: {
+    style: [{
       width: props.handDimensions,
       height: props.handDimensions
-    }
+    }, _reactNative.Platform.OS === "web" && {
+      position: "absolute",
+      left: (props.containerDimensions - handDimensions) / 2,
+      bottom: 50
+    }]
   }));
 }
 var _default = FightingIcon;
