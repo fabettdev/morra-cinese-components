@@ -7,6 +7,11 @@ import { View, Image } from "react-native";
 import { fightingIconStyle } from "./fightinhIconStyle";
 
 function FightingIcon(props) {
+    const rotateStart = props.direction === "right" ? 45 : 270;
+    const rotateEnd = props.direction === "right" ? 90 : 315;
+    const translateStart = props.direction === "right" ? -45 : 0;
+    const translateEnd = props.direction === "right" ? 0 : 45;
+
     const [state, setState] = useState({
         count: 0,
         isReturning: false,
@@ -26,7 +31,7 @@ function FightingIcon(props) {
                 let translate = null;
                 let count = prevState.count;
 
-                if (prevState.rotate === props.rotateEnd && prevState.translate === props.translateEnd) {
+                if (prevState.rotate === rotateEnd && prevState.translate === translateEnd) {
                     isReturning = true;
                     if (props.direction === "right") {
                         count += 1;
@@ -34,12 +39,12 @@ function FightingIcon(props) {
                 }
 
                 if (!props.direction) {
-                    if (prevState.rotate === props.rotateStart && prevState.translate === props.translateStart) {
+                    if (prevState.rotate === rotateStart && prevState.translate === translateStart) {
                         count += 1;
                     }
                 }
 
-                if (prevState.rotate === props.rotateStart && prevState.translate === props.translateStart) {
+                if (prevState.rotate === rotateStart && prevState.translate === translateStart) {
                     if (prevState.count === 3) return { prevState };
                     isReturning = false;
                 }
