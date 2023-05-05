@@ -7,7 +7,7 @@ import Controls from "./functionalComponents/controls/Controls";
 import BattleBoard from "./functionalComponents/battleBoard/BattleBoard";
 import BattleButton from "./functionalComponents/battleButton/BattleButton";
 import MoveIcon from "./functionalComponents/moveIcon/MoveIcon";
-import FightingIcon from "./hookComponents/fightingIcon/fightingIcon";
+import FightingIcon from "./hookComponents/fightingIcon/FightingIcon";
 
 export {
   Button,
