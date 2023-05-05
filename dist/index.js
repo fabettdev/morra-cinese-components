@@ -27,6 +27,12 @@ Object.defineProperty(exports, "Controls", {
     return _Controls.default;
   }
 });
+Object.defineProperty(exports, "FightingIcon", {
+  enumerable: true,
+  get: function get() {
+    return _FightingIcon.default;
+  }
+});
 Object.defineProperty(exports, "Form", {
   enumerable: true,
   get: function get() {
@@ -66,4 +72,5 @@ var _Controls = _interopRequireDefault(require("./functionalComponents/controls/
 var _BattleBoard = _interopRequireDefault(require("./functionalComponents/battleBoard/BattleBoard"));
 var _BattleButton = _interopRequireDefault(require("./functionalComponents/battleButton/BattleButton"));
 var _MoveIcon = _interopRequireDefault(require("./functionalComponents/moveIcon/MoveIcon"));
+var _FightingIcon = _interopRequireDefault(require("./hookComponents/fightingIcon/FightingIcon"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
