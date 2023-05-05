@@ -24,6 +24,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; } // React
 // Style
 // React Native
 function FightingIcon(props) {
+  var rotateStart = props.direction === "right" ? 45 : 270;
+  var rotateEnd = props.direction === "right" ? 90 : 315;
+  var translateStart = props.direction === "right" ? -45 : 0;
+  var translateEnd = props.direction === "right" ? 0 : 45;
   var _useState = (0, _react.useState)({
       count: 0,
       isReturning: false,
@@ -42,18 +46,18 @@ function FightingIcon(props) {
         var rotate = null;
         var translate = null;
         var count = prevState.count;
-        if (prevState.rotate === props.rotateEnd && prevState.translate === props.translateEnd) {
+        if (prevState.rotate === rotateEnd && prevState.translate === translateEnd) {
           isReturning = true;
           if (props.direction === "right") {
             count += 1;
           }
         }
         if (!props.direction) {
-          if (prevState.rotate === props.rotateStart && prevState.translate === props.translateStart) {
+          if (prevState.rotate === rotateStart && prevState.translate === translateStart) {
             count += 1;
           }
         }
-        if (prevState.rotate === props.rotateStart && prevState.translate === props.translateStart) {
+        if (prevState.rotate === rotateStart && prevState.translate === translateStart) {
           if (prevState.count === 3) return {
             prevState: prevState
           };
@@ -80,28 +84,29 @@ function FightingIcon(props) {
   }, [state]);
   return /*#__PURE__*/_react.default.createElement(_reactNative.View, {
     style: [_fightinhIconStyle.fightingIconStyle.container, {
-      width: containerDimensions,
-      height: containerDimensions
+      width: props.containerDimensions,
+      height: props.containerDimensions,
+      gap: props.gap
     }]
   }, /*#__PURE__*/_react.default.createElement(_reactNative.Image, {
     source: props.moveHand,
-    style: [_fightinhIconStyle.fightingIconStyle.topHand, {
+    style: {
       width: props.handDimensions,
       height: props.handDimensions,
       transform: [{
         rotate: "".concat(state.rotate, "deg")
       }, {
-        translate: state.translate
+        translateX: state.translate
       }, {
         scaleX: props.direction === "right" ? 1 : -1
       }]
-    }]
+    }
   }), /*#__PURE__*/_react.default.createElement(_reactNative.Image, {
     source: props.baseHand,
-    style: [_fightinhIconStyle.fightingIconStyle.bottomHand, {
+    style: {
       width: props.handDimensions,
       height: props.handDimensions
-    }]
+    }
   }));
 }
 var _default = FightingIcon;
