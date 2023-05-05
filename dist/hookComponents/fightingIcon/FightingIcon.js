@@ -102,7 +102,7 @@ function FightingIcon(props) {
       }]
     }, _reactNative.Platform.OS === "web" && {
       position: "absolute",
-      left: (props.containerDimensions - handDimensions) / 2,
+      left: (props.containerDimensions - props.handDimensions) / 2,
       bottom: 50
     }]
   }), /*#__PURE__*/_react.default.createElement(_reactNative.Image, {
@@ -112,8 +112,8 @@ function FightingIcon(props) {
       height: props.handDimensions
     }, _reactNative.Platform.OS === "web" && {
       position: "absolute",
-      left: (props.containerDimensions - handDimensions) / 2,
-      bottom: 50
+      left: (props.containerDimensions - props.handDimensions) / 2,
+      bottom: 0
     }]
   }));
 }
